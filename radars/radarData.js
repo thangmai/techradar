@@ -1,5 +1,5 @@
 //This is the title for your window tab, and your Radar
-document.title = "Stephen's Technology Radar";
+document.title = "TMai's Technology Radar";
 
 
 //This is the concentic circles that want on your radar
@@ -133,18 +133,23 @@ var radar_data = [
         "color" : "#B70062",
         "left"  : (w-200+30),
         "top" :   (h/2 + 18),
-        "items" : [ 
-            {"name":"Java language end of life", "pc":{"r":290,"t":355},"movement":"c"},   
-            {"name":"F#", "pc":{"r":270,"t":330},"movement":"c"},   
-            {"name":"Scala", "pc":{"r":290,"t":320},"movement":"c"},   
-            {"name":"Clojure", "pc":{"r":260,"t":310},"movement":"c"},   
-            {"name":"HTML 5", "pc":{"r":250,"t":275},"movement":"c"},   
-            {"name":"DSLs", "pc":{"r":190,"t":340},"movement":"c"},   
-            {"name":"Groovy", "pc":{"r":190,"t":280},"movement":"c"},   
-            {"name":"C#4", "pc":{"r":90,"t":355},"movement":"c"},   
-            {"name":"JRuby", "pc":{"r":90,"t":330},"movement":"c"},   
-            {"name":"Javascript as a 1st class language", "pc":{"r":90,"t":275},"movement":"c"},   
-            {"name":"Ruby", "pc":{"r":30,"t":282},"movement":"c"}
+        "items" : [
+            {"name":"C#5", "pc":{"r":360,"t":355},"movement":"c"},
+            {"name":"Python", "pc":{"r":260,"t":275},"movement":"c"},
+            {"name":"LESS", "pc":{"r":220,"t":340},"movement":"c"},
+            {"name":"Dropwizard", "pc":{"r":290,"t":290},"movement":"c"},
+            {"name":"Perl", "pc":{"r":260,"t":305},"movement":"c"},
+            {"name":"F#", "pc":{"r":270,"t":330},"movement":"c"},
+            {"name":"Scala", "pc":{"r":270,"t":320},"movement":"c"},
+            {"name":"HTML 5", "pc":{"r":150,"t":335},"movement":"c"},
+            {"name":"Groovy", "pc":{"r":190,"t":280},"movement":"c"},
+            {"name":"Ruby", "pc":{"r":130,"t":282},"movement":"c"},
+            {"name":"CoffeeScript", "pc":{"r":130,"t":310},"movement":"c"},
+            {"name":"C#4", "pc":{"r":90,"t":355},"movement":"c"},
+            {"name":"Javascript", "pc":{"r":90,"t":275},"movement":"c"},
+            {"name":"DSLs", "pc":{"r":70,"t":300},"movement":"c"},
+            {"name":"JRuby", "pc":{"r":90,"t":320},"movement":"c"},
+            {"name":"Clojure", "pc":{"r":30,"t":310},"movement":"c"},
         ]
     }
 ];
