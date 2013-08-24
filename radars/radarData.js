@@ -1,13 +1,13 @@
 //This is the title for your window tab, and your Radar
-document.title = "TMai's Technology Radar";
+document.title = "TMai's Technology Radar - August 2013";
 
 
 //This is the concentic circles that want on your radar
 var radar_arcs = [
-                   {'r':100,'name':'Adopt'}
-                  ,{'r':200,'name':'Trial'}
-                  ,{'r':300,'name':'Assess'}
-                  ,{'r':400,'name':'Hold'}
+                   {'r':100}//,'name':'Adopt'}
+                  ,{'r':200}//,'name':'Trial'}
+                  ,{'r':300}//,'name':'Assess'}
+                  ,{'r':400}//,'name':'Hold'}
                  // ,{'r':500,'name':'Possible Extra if you want it'}
                  ];
 
@@ -45,25 +45,25 @@ var radar_arcs = [
 // - Hold: things that are getting attention in the industry, but not ready for use; sometimes they are not mature enough yet, sometimes they are irredeemably flawed
 //      Note: there's no "avoid" ring, but throw things in the hold ring that people shouldn't use.
 
-var h = 1160;
-var w = 1300;
+var h = 850;
+var w = 1400;
 
 var radar_data = [
     { "quadrant": "Techniques",
-        "left" : 45,
-        "top" : 18,
+        "left" : 155,
+        "top" : 58,
         "color" : "#8FA227",
         "items" : [
-            {"name":"Build your own radar", "pc":{"r":250,"t":140},"movement":"c"}
+            {"name":"Build your own radar", "pc":{"r":250,"t":140},"movement":"c"},
             {"name":"HTML 5 storage instead of cookies", "pc":{"r":280,"t":160},"movement":"c"},
             {"name":"DevOps", "pc":{"r":250,"t":110},"movement":"c"},    
             {"name":"Polygot Programming", "pc":{"r":80,"t":140},"movement":"c"},
-            {"name":"Healthcheck page", "pc":{"r":80,"t":140},"movement":"c"}
+            {"name":"Healthcheck page", "pc":{"r":60,"t":120},"movement":"c"}
         ]
     },
     { "quadrant": "Tools",
-        "left": w-250+30,
-        "top" : 18,
+        "left": w-270+30,
+        "top" : 58,
         "color" : "#587486",
         "items" : [ 
             {"name":"Mercurial", "pc":{"r":380,"t":20},"movement":"c"},
@@ -75,13 +75,13 @@ var radar_data = [
             {"name":"Light Table", "pc":{"r":250,"t":40},"movement":"c", "blipSize":300},
             {"name":"NoSQL", "pc":{"r":180,"t":65},"movement":"c"},
             {"name":"Puppet", "pc":{"r":230,"t":85},"movement":"c"},
-            {"name":"Git", "pc":{"r":30,"t":15},"movement":"c"},
+            {"name":"Git", "pc":{"r":30,"t":25},"movement":"c"},
             {"name":"Github", "pc":{"r":80,"t":70},"movement":"c"},
         ]
     },
     { "quadrant": "Platforms",
-        "left" :45,
-         "top" : (h/2 + 18),
+        "left" :155,
+         "top" : (h/2 + 58),
         "color" : "#DC6F1D",
         "items" : [
             {"name":"Neo4j", "pc":{"r":360,"t":220},"movement":"c"},
@@ -90,14 +90,14 @@ var radar_data = [
             {"name":"Google App Engine", "pc":{"r":220,"t":205},"movement":"c"},
             {"name":"Node.js", "pc":{"r":235,"t":190},"movement":"c", "blipSize":300},
             {"name":"Storm", "pc":{"r":220,"t":245},"movement":"c", "blipSize":300},
-            {"name":"Location based services", "pc":{"r":130,"c":230},"movement":"c"},
+            {"name":"Location based services", "pc":{"r":130,"t":230},"movement":"c"},
             {"name":"Android", "pc":{"r":290,"t":190},"movement":"c"}
         ]
     },
     { "quadrant": "Languages & Frameworks",
         "color" : "#B70062",
-        "left"  : (w-240+30),
-        "top" :   (h/2 + 18),
+        "left"  : (w-270+30),
+        "top" :   (h/2 + 58),
         "items" : [
             {"name":"Sinatra", "pc":{"r":360,"t":355},"movement":"c"},
             {"name":"F#", "pc":{"r":370,"t":330},"movement":"c"},
@@ -111,7 +111,7 @@ var radar_data = [
             {"name":"CoffeeScript", "pc":{"r":230,"t":310},"movement":"c"},
             {"name":"Ruby", "pc":{"r":130,"t":282},"movement":"c"},
             {"name":"JRuby", "pc":{"r":170,"t":320},"movement":"c", "blipSize":200},
-            {"name":"C#", "pc":{"r":90,"t":355},"movement":"c"},
+            {"name":"C#", "pc":{"r":90,"t":345},"movement":"c"},
             {"name":"DSLs", "pc":{"r":70,"t":300},"movement":"c", "blipSize":200},
             {"name":"Clojure", "pc":{"r":30,"t":310},"movement":"c", "blipSize":200},
         ]

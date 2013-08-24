@@ -1,6 +1,6 @@
 function init(h,w) {
   $('#title').text(document.title);  
-	   
+
  var radar = new pv.Panel()
       .width(w)
       .height(h)
@@ -46,7 +46,7 @@ for (var i = 0; i < radar_data.length; i++) {
     .bottom(function(d) { var y = polar_to_raster(d.pc.r, d.pc.t)[1];                                 
                           console.log("name:" + d.name + ", y:" + y); 
                           return y;})
-    .title(function(d) { return d.name;})		 
+    .title(function(d) { return d.name;})
     .cursor( function(d) { return ( d.url !== undefined ? "pointer" : "auto" ); })                                                            
     .event("click", function(d) { if ( d.url !== undefined ){self.location =  d.url}}) 
     .angle(45)
@@ -63,14 +63,14 @@ for (var i = 0; i < radar_data.length; i++) {
 
 //Quadrant Ledgends
 var radar_quadrant_ctr=1;
-for (var i = 0; i < radar_data.length; i++) {        
+for (var i = 0; i < radar_data.length; i++) {
     radar.add(pv.Label)         
          .left( radar_data[i].left )         
          .top( radar_data[i].top )  
          .text(  radar_data[i].quadrant )		 
          .strokeStyle( radar_data[i].color )
          .fillStyle( radar_data[i].color )                    
-         .font("18px sans-serif")
+         .font("20px sans-serif")
             .add( pv.Dot )            
             .def("i", radar_data[i].top )
             .data(radar_data[i].items)            
@@ -78,11 +78,12 @@ for (var i = 0; i < radar_data.length; i++) {
             .shape( function(d) {return (d.movement === 't' ? "triangle" : "circle");})                 
             .cursor( function(d) { return ( d.url !== undefined ? "pointer" : "auto" ); })                                                            
             .event("click", function(d) { if ( d.url !== undefined ){self.location =  d.url}}) 
-            .size(10) 
+            .size(20) 
             .angle(45)            
             .anchor("right")                
                 .add(pv.Label)                
-                .text(function(d) {return radar_quadrant_ctr++ + ". " + d.name;} );
+                .text(function(d) {return radar_quadrant_ctr++ + ". " + d.name;} )
+                .font("13px sans-serif");
 }      
        
  radar.anchor('radar');
