@@ -57,7 +57,7 @@ var radar_data = [
             {"name":"Build your own radar", "pc":{"r":250,"t":140},"movement":"c"},
             {"name":"HTML 5 storage instead of cookies", "pc":{"r":280,"t":160},"movement":"c"},
             {"name":"DevOps", "pc":{"r":250,"t":110},"movement":"c"},    
-            {"name":"Polygot Programming", "pc":{"r":80,"t":140},"movement":"c"},
+            {"name":"Polyglot Programming", "pc":{"r":80,"t":140},"movement":"c"},
             {"name":"Healthcheck page", "pc":{"r":60,"t":120},"movement":"c"}
         ]
     },
@@ -90,7 +90,6 @@ var radar_data = [
             {"name":"Google App Engine", "pc":{"r":220,"t":205},"movement":"c"},
             {"name":"Node.js", "pc":{"r":235,"t":190},"movement":"c", "blipSize":300},
             {"name":"Storm", "pc":{"r":220,"t":245},"movement":"c", "blipSize":300},
-            {"name":"Location based services", "pc":{"r":130,"t":230},"movement":"c"},
             {"name":"Android", "pc":{"r":290,"t":190},"movement":"c"}
         ]
     },
